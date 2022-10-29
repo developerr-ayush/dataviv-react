@@ -3,33 +3,33 @@ import logo from '../../images/dataviv logo.png'
 // import navbarCss from './navbar.scss';
 export default function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark pt-4">
-      <div class="container">
-        <a class="navbar-brand text-white" href="index.html">
+    <nav className="navbar navbar-expand-lg navbar-dark pt-4">
+      <div className="container">
+        <a className="navbar-brand text-white" href="index.html">
           <img src={logo} height="60px" alt="dataviv logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item active">
+              <a className="nav-link active text-white" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="about.html">About</a>
+            <li className="nav-item">
+              <a className="nav-link text-white" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="services.html">Service</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
+            <li className="nav-item">
+              <a className="nav-link text-white" href="services.html">Service</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">Contact</a>
+            <li className="nav-item">
+              <a className="nav-link text-white" href="portfolio.html">Portfolio</a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link text-white" href="contact.html">Contact</a>
             </li>
           </ul>
 
