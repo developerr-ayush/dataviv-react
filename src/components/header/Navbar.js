@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import logo from '../../images/dataviv logo.png'
-// import navbarCss from './navbar.scss';
+import { NavLink } from "react-router-dom"
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark pt-4">
@@ -14,22 +14,22 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item active">
-              <a className="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+            <li className="nav-item">
+              <NavLink className="nav-link text-white"  to="/" exact={true} end>Home</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="about.html">About</a>
+              <NavLink className="nav-link text-white" to="about" exact={true}>About</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="services.html">Service</a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link text-white" href="portfolio.html">Portfolio</a>
+              <NavLink className="nav-link text-white" to="service" exact={true}>Service</NavLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link text-white" href="contact.html">Contact</a>
+              <NavLink className="nav-link text-white" to="portfolio" exact={true}>Portfolio</NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink className="nav-link text-white" to="contact" exact={true}>Contact</NavLink>
             </li>
           </ul>
 
@@ -38,7 +38,7 @@ export default function Navbar() {
     </nav>
   )
 }
-setTimeout(() => {
+setInterval(() => {
 
   // When the user scrolls the page, execute myFunction
   window.onscroll = function () { myFunction() };

@@ -3,19 +3,20 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-const options = {
-  responsive: {
-    0: {
-      items: 1,
+  const options = {
+    
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
     },
-    600: {
-      items: 3,
-    },
-  },
-  center: true,
-  loop: true,
-  margin:20
-};
+    center: true,
+    loop: true,
+    margin:20,
+  };
 
 export default function Projects() {
   return (
@@ -25,7 +26,7 @@ export default function Projects() {
         <p className="primary-text-color">
           SHOWCASE OF AWESOME WORKS WE HAVE DONE FOR OUR CLIENTS
         </p>
-        <OwlCarousel className="clients" {...options}>
+        <OwlCarousel className="owl-theme clients" {...options}>
           <div className="item">
             <div
               className="

@@ -4,6 +4,7 @@ import Vrimage from "../../images/image-12.png";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import Cuveebottom from "../designs/Cuveebottom";
 
 const options = {
   items: 3,
@@ -12,6 +13,7 @@ const options = {
 };
 export default function Vr() {
   return (
+    <>
     <div className="scene add-bg">
       <Cuveetop />
       <div className="container">
@@ -43,5 +45,7 @@ export default function Vr() {
         </div>
       </div>
     </div>
+    <Cuveebottom/>
+    </>
   );
 }

@@ -1,10 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar';
 import slideDown from '../../images/icon-bg-vr.png';
+import Cuveebottom from '../designs/Cuveebottom';
 
 
 export default function banner() {
     return (
+        <>
         <header className='index'>
             <div data-aos="flip-right" className="
           w-100
@@ -15,7 +16,6 @@ export default function banner() {
           align-content-center
           text-center text-white
         ">
-            <Navbar/>
                 <h1>Cutting edge automation for your business</h1>
                 <p>Begin your growth journey</p>
                 <div className="w-100">
@@ -31,5 +31,8 @@ export default function banner() {
                 </a>
             </div>
         </header>
+        <Cuveebottom/>
+
+        </>
     )
 }

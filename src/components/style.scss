@@ -179,68 +179,7 @@ header {
         min-height: 100vh;
     }
 
-    .navbar-brand {
-        font-weight: $bold;
-    }
-
-    .sticky {
-        background-color: $seccol;
-        z-index: 2000;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid #FFD700;
-    }
-    @media (max-width:991px) {
-        .navbar{
-            background-color: $seccol;
-            z-index: 2000;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #FFD700;
-        }
-    }
-
-    .navbar {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 200;
-    }
-
-    .nav-item {
-        font-weight: $bold;
-        margin-right: 20px;
-        position: relative;
-        transition: 0.5s;
-        text-align: left;
-    }
-
-    .nav-item::after {
-        width: 0%;
-        height: 2px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        content: "";
-        background-color: $green-col;
-        transition: 0.5s;
-    }
-
-    .nav-item:hover::after {
-        width: 100%;
-    }
-
-    .nav-item.active .nav-link {
-        color: $green-col !important;
-    }
-
-    .nav-item.active::after {
-        width: 100%;
-    }
-
-    .nav-item:hover .nav-link {
-        color: $green-col !important;
-    }
-
+   
     h1 {
         font-size: 3.5rem;
         width: 100%;
@@ -281,6 +220,69 @@ header {
         }
     }
 }
+
+.navbar-brand {
+    font-weight: $bold;
+}
+
+.sticky {
+    background-color: $seccol;
+    z-index: 2000;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #FFD700;
+}
+@media (max-width:991px) {
+    .navbar{
+        background-color: $seccol;
+        z-index: 2000;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #FFD700;
+    }
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.nav-item {
+    font-weight: $bold;
+    margin-right: 20px;
+    position: relative;
+    transition: 0.5s;
+    text-align: left;
+}
+
+.nav-item::after {
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    background-color: $green-col;
+    transition: 0.5s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-item .nav-link.active {
+    color: $green-col !important;
+}
+
+.nav-item:has(.nav-link.active)::after {
+    width: 100%;
+}
+
+.nav-item:hover .nav-link {
+    color: $green-col !important;
+}
+
 
 header.article-page {
     min-height: 0 !important;
