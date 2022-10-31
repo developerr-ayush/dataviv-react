@@ -3,10 +3,10 @@ import slideDown from '../../images/icon-bg-vr.png';
 import Cuveebottom from '../designs/Cuveebottom';
 
 
-export default function banner() {
+export default function banner({page}) {
     return (
         <>
-        <header className='index'>
+        <header className={page}>
             <div data-aos="flip-right" className="
           w-100
           h-50

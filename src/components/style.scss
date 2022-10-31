@@ -108,7 +108,78 @@ a:hover {
     color: $white !important;
 }
 
-header.index {
+
+
+header.service {
+min-height: 100vh;
+    background-image: url("../images/service/service.jpg");
+    .slide-down{
+        display: none;
+    }
+
+}
+
+header.product {
+    min-height: 100vh;
+    background-image: url("../images/background/2.jpg");
+    .slide-down{
+        display: none;
+    }
+
+}
+
+header.portfolio {
+    min-height: 100vh;
+    background-image: url("../images/about/robot-workin-with-laptop.jpg");
+    .slide-down{
+        display: none;
+    }
+
+}
+
+header.contact {
+    background-image: url("../images/contact/contact-us.jpg");
+    min-height: 100vh ;
+    padding: 0 40px ;
+
+    .slide-down{
+        display: none;
+    }
+}
+
+header.camera-x {
+    background-image: url("../images/background/6.png");
+    min-height: 100vh;
+    .slide-down{
+        display: none;
+    }
+
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: $seccol;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: $green-col;
+    border-radius: 5px;
+}
+header.about {
+    background-image: url("../images/images/abt.webp");
+    min-height: 100vh;
+    .slide-down{
+        display: none;
+    }
+}
+
+header {
+    background-image: url("../images/a1920x1200.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    background-blend-mode: darken;
     min-height: 150vh;
     background-image: url(../images/vr-hero-bg-1.jpg);
 
@@ -125,55 +196,7 @@ header.index {
         text-align: center;
         min-height: auto;
     }
-}
-
-header.service {
-    background-image: url("../images/service/service.jpg");
-
-}
-
-header.product {
-    background-image: url("../images/background/2.jpg");
-
-}
-
-header.portfolio {
-    background-image: url("../images/about/robot-workin-with-laptop.jpg");
-
-}
-
-header.contact1 {
-    background-image: url("../images/contact/contact-us.jpg");
-
-}
-
-header.camera-x {
-    background-image: url("../images/background/6.png");
-
-}
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: $seccol;
-
-}
-::-webkit-scrollbar-thumb{
-    background-color: $green-col;
-    border-radius: 5px;
-}
-header.about {
-    background-image: url("../images/images/abt.webp");
-
-}
-
-header {
-    background-image: url("../images/a1920x1200.jpg");
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-position: center;
-    min-height: 100vh;
-    position: relative;
-    background-blend-mode: darken;
-
+    
     &>div {
         padding: 40px;
         min-height: 100vh;
@@ -1469,4 +1492,11 @@ footer a:hover{
 }
 footer{
     margin-top: 20px;
+}
+.hr-scrol .nav-tab.collapsed h4{
+    color: #989898;
+}
+.hr-scrol .nav-tab h4{
+    color: #fff;
+    
 }

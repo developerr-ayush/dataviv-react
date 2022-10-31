@@ -1,7 +1,7 @@
 import React from "react";
 import logo from '../../images/dataviv logo.png'
 import { NavLink } from "react-router-dom"
-export default function Navbar() {
+export default function Navbar({page}) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark pt-4">
       <div className="container">
@@ -15,21 +15,21 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link text-white"  to="/" exact={true} end>Home</NavLink>
+              <NavLink className="nav-link text-white"  to="/" exact end onClick={()=>{page("index")}}>Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to="about" exact={true}>About</NavLink>
+              <NavLink className="nav-link text-white" to="about" onClick={()=>{page("about")}} exact>About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to="service" exact={true}>Service</NavLink>
-            </li>
-
-            <li className="nav-item">
-              <NavLink className="nav-link text-white" to="portfolio" exact={true}>Portfolio</NavLink>
+              <NavLink className="nav-link text-white" to="service" exact onClick={()=>{page("service")}}>Service</NavLink>
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to="contact" exact={true}>Contact</NavLink>
+              <NavLink className="nav-link text-white" to="portfolio" onClick={()=>{page("portfolio")}} exact>Portfolio</NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink className="nav-link text-white" to="contact" exact onClick={()=>{page("contact")}}>Contact</NavLink>
             </li>
           </ul>
 
